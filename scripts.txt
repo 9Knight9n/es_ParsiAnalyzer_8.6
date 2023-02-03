@@ -1,0 +1,2 @@
+docker build -t es_pa_8.6 .
+docker run es_pa_8.6
