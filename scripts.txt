@@ -1,2 +1,2 @@
-docker build -t es_pa_8.6 .
+DOCKER_BUILDKIT=1 docker build --rm --no-cache .
 docker run es_pa_8.6
