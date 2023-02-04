@@ -1,3 +1,4 @@
 $env:DOCKER_BUILDKIT = 1
-docker build --rm --no-cache .
-docker run es_pa_8.6
+docker build -t es_pa_8.6 .
+docker run es_pa_8.6 
+docker cp container_id:/home/app/target/releases/ParsiAnalyzer-1.0-SNAPSHOT.zip ./ParsiAnalyzer-1.0-SNAPSHOT.zip
